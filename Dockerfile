@@ -1,10 +1,9 @@
-FROM node:18.16.1-slim
+FROM node:20
 
 WORKDIR /app
+RUN apt-get update -y && apt-get install -y openssl
 
 COPY package*.json ./
-
-RUN apt-get update -y && apt-get install -y openssl
 
 RUN npm install
 
