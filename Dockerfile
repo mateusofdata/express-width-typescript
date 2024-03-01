@@ -1,7 +1,6 @@
 FROM node:20
 
 WORKDIR /app
-RUN apt-get update -y && apt-get install -y openssl
 
 COPY package*.json ./
 
