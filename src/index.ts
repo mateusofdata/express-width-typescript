@@ -20,7 +20,7 @@ prisma.$connect().then(() => {
     console.error("\x1b[31m", "Erro ao conectar ao banco de dados:", error, "\x1b[0m");
 });
 
-route.get('/s', Person.getName)
+route.get('/ss', Person.getName)
 
 route.post('/create', async (req: Request,res: Response)=>{
     try {
